@@ -1,0 +1,4 @@
+# Demo shell for README screenshots: neutral prompt, generic fastfetch.
+PS1='\[\e[38;2;189;147;249m\]demo \[\e[38;2;80;250;123m\]❯\[\e[0m\] '
+clear
+fastfetch --config DEMO_HOME/.config/fastfetch/config.jsonc

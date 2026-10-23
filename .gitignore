@@ -1,0 +1,13 @@
+# Rendered previews from tools/*.py - output, not source.
+*.png
+!cursors/**/*.png
+!plasma/**/*.png
+!plasma/**/*.jpg
+
+# Editor / OS cruft
+*~
+*.swp
+.DS_Store
+
+# README screenshots are source.
+!screenshots/*.png

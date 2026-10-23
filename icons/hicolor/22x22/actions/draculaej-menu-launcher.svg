@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+ <!-- Three-line launcher icon. Uses the ColorScheme-Text class like Breeze's application-menu, so Plasma
+      paints it in the theme's text color (Dracula white) and can recolor it on hover. -->
+ <defs>
+  <style type="text/css" id="current-color-scheme">.ColorScheme-Text { color: #f8f8f2; }</style>
+ </defs>
+ <g class="ColorScheme-Text" fill="currentColor">
+  <rect x="3" y="5" width="16" height="2" rx="1"/>
+  <rect x="3" y="10" width="16" height="2" rx="1"/>
+  <rect x="3" y="15" width="16" height="2" rx="1"/>
+ </g>
+</svg>

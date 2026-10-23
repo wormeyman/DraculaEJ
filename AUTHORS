@@ -1,0 +1,30 @@
+--------------------------------- Dracula KDE ----------------------------
+
+ Dracula Theme - https://draculatheme.com - https://github.com/dracula/gtk (kde/ folder)
+ EliverLara - Dracula KDE (Aurorae, color schemes, Kvantum, Plasma theme, cursors)
+
+--------------------------------- Dracula KDE ----------------------------
+
+--------------------------------- Tela icons -----------------------------
+
+ Vinceliuice - https://github.com/vinceliuice/Tela-icon-theme (GPL-3.0)
+ Not bundled here; tela/install-ej.patch changes the folder color only.
+
+--------------------------------- Tela icons -----------------------------
+
+--------------------------------- Other credits --------------------------
+
+ Klassy - Paul A McAuley - https://github.com/paulmcauley/klassy (GPL)
+   klassy/DraculaEJ.klpw is built from Klassy's bundled "Eaten Fruits" preset.
+ Dracula for Konsole - Dracula Theme - https://github.com/dracula/konsole (MIT,
+   see konsole/LICENSE-dracula-konsole)
+ README wallpaper - Dracula Theme - https://github.com/dracula/wallpaper (MIT;
+   not bundled, only shown in screenshots/)
+
+--------------------------------- Other credits --------------------------
+
+--------------------------------- DraculaEJ ------------------------------
+
+ Eric - tweaks and new macOS-style window buttons
+
+--------------------------------- DraculaEJ ------------------------------

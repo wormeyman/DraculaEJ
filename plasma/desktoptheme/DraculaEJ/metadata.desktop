@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=DraculaEJ
+Comment=Dracula KDE panels for DraculaEJ (based on the Dracula color palette).
+X-KDE-PluginInfo-Author=EliverLara, Eric
+X-KDE-PluginInfo-Email=eliverlara@gmail.com
+X-KDE-PluginInfo-Name=DraculaEJ
+X-KDE-PluginInfo-Version=1.0.0
+X-KDE-PluginInfo-Website=https://github.com/wormeyman/DraculaEJ
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=GPLv3
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=5.0
+
+[AdaptiveTransparency]
+enabled=true

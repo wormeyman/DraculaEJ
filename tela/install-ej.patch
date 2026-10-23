@@ -1,0 +1,11 @@
+--- install.sh	2026-08-10 01:17:32.000000000 -0700
++++ install-ej.sh	2026-10-23 06:58:41.067690642 -0700
+@@ -132,7 +132,7 @@
+       local -r theme_back_color='#ffffff'
+       ;;
+     dracula)
+-      local -r theme_color='#44475a'
++      local -r theme_color='#7e57c2'
+       local -r theme_back_color='#f8f8f2'
+       ;;
+     nord)

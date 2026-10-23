@@ -1,0 +1,24 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Eric"
+            },
+            {
+                "Email": "eliverlara@gmail.com",
+                "Name": "EliverLara (Dracula KDE)"
+            }
+        ],
+        "Category": "Plasma Look And Feel",
+        "Description": "Dark global theme based on Dracula KDE, tuned to feel like macOS",
+        "EnabledByDefault": true,
+        "Id": "com.eric.DraculaEJ",
+        "License": "GPL 3+",
+        "Name": "DraculaEJ",
+        "Version": "1.0",
+        "Website": "https://github.com/wormeyman/DraculaEJ"
+    },
+    "X-KDE-fallbackPackage": "org.kde.breezedark.desktop",
+    "X-Plasma-MainScript": "defaults"
+}
