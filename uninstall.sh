@@ -13,5 +13,6 @@ rm --recursive --force "$HOME/.config/Kvantum/$NAME"
 rm --recursive --force "$HOME/.local/share/icons/$NAME-cursors"
 rm --force "$HOME/.local/share/icons/hicolor/22x22/actions/draculaej-menu-launcher.svg"
 rm --force "$HOME/.local/share/konsole/Dracula.colorscheme" "$HOME/.local/share/konsole/$NAME.profile"
+for size in 16 22 24; do rm --force "$HOME/.local/share/icons/Tela-dracula/$size/panel/toshy_app_icon_rainbow.svg"; done
 
 echo "DraculaEJ removed."
