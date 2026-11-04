@@ -67,6 +67,16 @@ Dracula PRO; its license forbids adapting it.
 
 ## Findings - do not re-derive
 
+- **Tray icons at 225% (found on hammond, 2026-11-03).** Tela's `install.sh`
+  creates `16@2x`...`scalable@2x` links but not the `@3x` folders its
+  `index.theme` lists. At 225% KDE looks up `@3x`, misses, and falls back to the
+  colored `scalable/apps` icons, so the tray's clipboard and Bluetooth icons
+  were colored. `install.sh` now adds the `@3x` links. Plasma only picks them up
+  after `systemctl --user restart plasma-plasmashell`. The white Toshy icon
+  (`icons/Tela-dracula/panel/`) is path `st0` from Toshy's
+  `toshy_app_icon_rainbow.svg` (Toshy is GPL-3.0) with `ColorScheme-Text`.
+  Apps that send a file path or pixmap (Handy, Bitwarden) can't be recolored.
+
 - **Button order lives in the user's `kwinrc`.** `~/.config/kwinrc`
   `[org.kde.kdecoration2]` `ButtonsOnLeft`/`ButtonsOnRight` beat kdedefaults,
   so a global theme can't change them once set. Write them with

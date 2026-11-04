@@ -93,6 +93,19 @@ patch --input=$HOME/Projects/DraculaEJ/tela/install-ej.patch install.sh
 
 The patch changes one line: the dracula folder color from `#44475a` to `#7e57c2`.
 
+Run DraculaEJ's `install.sh` after Tela's. When it finds Tela-dracula, it adds
+two tray fixes:
+
+- **Missing `@3x` folders.** Tela's installer links only the `@2x` folders. At
+  scales like 225%, KDE looks for `@3x`, finds nothing, and the system tray
+  shows colored app icons (clipboard, Bluetooth) instead of the white ones.
+  `install.sh` links `16@3x`, `22@3x`, `24@3x`, `32@3x` and `scalable@3x` the
+  same way. Restart Plasma (`systemctl --user restart plasma-plasmashell`) to
+  see the change.
+- **A white Toshy icon.** [Toshy](https://github.com/RedBearAK/toshy)'s tray icon
+  is a rainbow tile. `icons/Tela-dracula/panel/toshy_app_icon_rainbow.svg` is
+  Toshy's own command symbol without the tile, in the theme's text color.
+
 ### Launcher icon
 
 The icon file is installed by `install.sh`. Pointing the launcher at it is a

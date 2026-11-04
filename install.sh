@@ -34,6 +34,22 @@ cp "$SRC_DIR/icons/hicolor/22x22/actions/"*.svg     "$ICONS_DIR/hicolor/22x22/ac
 cp "$SRC_DIR/konsole/Dracula.colorscheme"           "$KONSOLE_DIR"
 cp "$SRC_DIR/konsole/$NAME.profile"                 "$KONSOLE_DIR"
 
+# Tela-dracula fixes, only when Tela-dracula is installed (see README.md):
+# - Tela's installer links only the @2x folders. At scales like 225% KDE asks
+#   for @3x, finds nothing, and the tray falls back to colored app icons.
+#   Link the @3x folders the same way.
+# - A white tray icon for Toshy in place of its rainbow one.
+TELA_DIR="$ICONS_DIR/Tela-dracula"
+if [[ -d "$TELA_DIR" ]]; then
+  for size in 16 22 24 32 scalable; do
+    [[ -e "$TELA_DIR/$size@3x" ]] || ln --symbolic "$size" "$TELA_DIR/$size@3x"
+  done
+  for size in 16 22 24; do
+    cp "$SRC_DIR/icons/Tela-dracula/panel/"*.svg "$TELA_DIR/$size/panel/"
+  done
+  gtk-update-icon-cache --force --quiet "$TELA_DIR" || true
+fi
+
 echo "Install finished."
 
 if [[ "$1" == "-a" || "$1" == "--apply" ]]; then
